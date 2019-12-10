@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f02c6bb776.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <title>Estoque uCook</title>
+</head>
+<body>
+     <!-- Menu -->
+     <nav class="menu-nav">
+        <div class="brand">
+          <img class="logo" src="assets/Asset-2.png" alt="uCook Logo" srcset=""> 
+          <h2 class="title">uCook</h2>
+        </div>
+       <div class="entry">
+         <p>Cadastro</p>
+       </div>
+      </nav>
+      <!-- Content -->
+      <section class="Content">
+        <div class="top-content">
+          <h1 class="topic">Cadastro de Itens</h1>
+          <img class="box-gift" src="/assets/undraw_gift_box_byy3.svg" alt="" srcset="">
+        </div>
+      </section>
+      <section class="sub-forms">
+        <div>
+          <form id="input-form" onsubmit="return false">
+            <div class="form-row">
+              <div class="col">
+                <input required id="product" type="text" class="form-control myform" placeholder="Produto" >
+              </div>
+              <div class="col">
+                <input required id="brand" type="text" class="form-control myform" placeholder="Marca">
+              </div>
+              <div class="col">
+                <input required id="price" type="number" class="form-control myform" placeholder="Preço (R$)">
+              </div>
+              <div class="col">
+                <input required id="carbs" type="number" class="form-control myform" placeholder="Carboidratos (g)">
+              </div>
+              <div class="col">
+                <input required id="category" type="text" class="form-control myform" placeholder="Categoria">
+              </div>
+              <div class="col">
+                <input required id="img" type="text" class="form-control myform" placeholder="Imagem">
+              </div>
+                <button onclick="registry();" class="btn btn-primary">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="card-columns">
+        <div class="card mb-3" >
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="/assets/remix-sementes.png" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 id="product-name" class="card-title">Remix Sementes</h5>
+                <p id="product-brand" class="card-text">Mãe Terra</p>
+                <p id="product-price" class="card-text">R$3,99</p>
+                <p id="product-carbs" class="card-text">18g Carboidrato</p>
+                <p id="product-cat" class="card-text">Nuts/Sementes</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Footer -->
+      <footer class="page-footer font-small cyan darken-3">
+  <!-- Footer Elements -->
+        <div class="container">
+    <!-- Grid row-->
+          <div class="row">
+      <!-- Grid column -->
+            <div class="col-md-12">
+              <div class="mb-5 flex-center">
+          <!--Instagram-->
+                <a class="ins-ic" href="https://www.instagram.com/ucookbr/" target="_blank">
+                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+          <!-- Facebook -->
+                <a class="fb-ic" href="https://www.facebook.com/ucookbr/" target="_blank">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+          <!-- Twitter -->
+                <a class="tw-ic" href="https://twitter.com/ucookbr" target="_blank">
+                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+          <!--Linkedin -->
+                <a class="li-ic" href="https://www.linkedin.com/company/ucookbr/" target="_blank">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+              </div>
+            </div>
+      <!-- Grid column -->
+          </div>
+    <!-- Grid row-->
+        </div>
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://www.instagram.com/ucookbr/"> uCook</a>
+      </div>
+  <!-- Copyright -->
+      </footer>
+</body>
+</html>
